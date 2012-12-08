@@ -23,7 +23,7 @@ img {
 .subHeader {
     padding-left: 20px;
     padding-bottom: 5px;
-    font-style:italic;
+    font-style: italic;
 }
 
 #leftSection {
@@ -71,27 +71,30 @@ footer {
     color: #818181;
     font-style: italic;
 }
-/* mobile */
-@media only screen and (max-width:600px) {
-    .mainHeader {
-        font-size:14pt;
-        font-weight:600;
-    }
-    .subHeader {
-        padding-left:10px;
-    }
-
-    #leftSection {
-        float:none;
-    }
-    #rightSection {
-        float:none;
-    }
-}
 
 /* required for windows 8 */
 @media screen and (max-width: 320px) {
     @-ms-viewport {
         width: 320px;
+    }
+}
+
+/* mobile */
+@media only screen and (max-width:600px) {
+    .mainHeader {
+        font-size: 14pt;
+        font-weight: 600;
+    }
+
+    .subHeader {
+        padding-left: 10px;
+    }
+
+    #leftSection {
+        float: none;
+    }
+
+    #rightSection {
+        float: none;
     }
 }
