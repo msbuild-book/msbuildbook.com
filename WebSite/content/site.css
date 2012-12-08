@@ -65,12 +65,16 @@ footer {
     clear: both;
     width: 100%;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 20px;
     font-family: monospace;
     font-size: 10pt;
     color: #818181;
     font-style: italic;
 }
+    footer p {
+        padding:0;
+        margin:0;
+    }
 
 /* required for windows 8 */
 @media screen and (max-width: 320px) {
