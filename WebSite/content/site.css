@@ -4,29 +4,33 @@
     padding: 0;
     font-family: "wf_SegoeUILight","wf_SegoeUI","Segoe UI Light","Segoe WP Light","Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
 }
+
 img {
     border-style: none;
 }
+
 #mainContent {
     width: 100%;
-    float:none;
+    float: none;
 }
 
 .mainHeader {
     font-size: 28pt;
-    font-weight:300;
-    padding-top:5px;
+    font-weight: 300;
+    padding-top: 5px;
 }
 
 .subHeader {
-    padding-left:20px;
-    padding-bottom:5px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    font-style:italic;
 }
 
 #leftSection {
     width: 50%;
     display: inline;
     float: left;
+    min-width: 250px;
 }
 
 
@@ -56,13 +60,38 @@ img {
     margin: 0;
     padding: 0;
 }
+
 footer {
-    clear:both;
-    width:100%;
-    text-align:center;
-    padding-top:10px;
-    font-family:monospace;
-    font-size:10pt;
-    color:#818181;
-    font-style:italic;
+    clear: both;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    font-family: monospace;
+    font-size: 10pt;
+    color: #818181;
+    font-style: italic;
+}
+/* mobile */
+@media only screen and (max-width:600px) {
+    .mainHeader {
+        font-size:14pt;
+        font-weight:600;
+    }
+    .subHeader {
+        padding-left:10px;
+    }
+
+    #leftSection {
+        float:none;
+    }
+    #rightSection {
+        float:none;
+    }
+}
+
+/* required for windows 8 */
+@media screen and (max-width: 320px) {
+    @-ms-viewport {
+        width: 320px;
+    }
 }
