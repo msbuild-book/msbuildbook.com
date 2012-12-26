@@ -47,8 +47,12 @@ body header {
     font-style: italic;
 }
 
+    .subHeader a {
+        margin-right:20px;
+    }
+
 #leftSection {
-    width: 50%;
+    width: 260px;
     display: inline;
     float: left;
     min-width: 250px;
@@ -57,7 +61,7 @@ body header {
 
 
 #rightSection {
-    width: 50%;
+    width:1000px;
     display: inline;
     float: right;
     background-color: transparent;
@@ -153,23 +157,66 @@ q em {
 img {
         max-width:90%;
     }
+
 /* required for windows 8 */
 @media screen and (max-width: 320px) {
     @-ms-viewport {
         width: 320px;
     }
 }
+/* we have to be a bit careful to setup the sections for different screen sizes*/
+
+@media only screen and (max-width:1500px) {
+    #rightSection {
+        width: 900px;
+    }
+}
+@media only screen and (max-width:1300px) {
+    #rightSection {
+        width: 700px;
+    }
+}
+@media only screen and (max-width:1100px) {
+    .mainHeader {
+        font-size: 20pt;
+        font-weight: 600;
+    }
+
+    #rightSection {
+        width: 620px;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .mainHeader {
+        font-size: 20pt;
+        font-weight: 600;
+    }
+
+    #rightSection {
+        width: 550px;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .mainHeader {
+        font-size: 20pt;
+        font-weight: 600;
+    }
+    #rightSection {
+        width: 350px;
+    }
+}
 
 /* mobile */
-@media only screen and (max-width:600px) {
-    
+@media only screen and (max-width:600px) { 
     .mainHeader {
         font-size: 14pt;
         font-weight: 600;
     }
 
     .subHeader {
-        margin-left: 10px;
+        padding-left: 10px;
     }
 
     #leftSection {
@@ -181,13 +228,15 @@ img {
         float: none;
     }
 
-    /* Convert the horizontal menu to a vertical one */
+    /* Convert the horizontal menu to a vertical one */    
     .subHeader, .subHeader nav, .subHeader nav ul, .subHeader nav ul li {
         display: block;
     }
 
         .subHeader nav ul li {
             display: normal;
-            padding-left: 5px;
         }
 }
+
+
+
