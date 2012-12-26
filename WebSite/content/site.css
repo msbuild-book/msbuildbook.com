@@ -2,6 +2,7 @@
     height: 100%;
     width: 100%;
     padding: 0;
+    margin: 0;
     font-family: "wf_SegoeUILight","wf_SegoeUI","Segoe UI Light","Segoe WP Light","Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
 }
 
@@ -12,13 +13,37 @@ img {
 #mainContent {
     width: 100%;
     float: none;
+    padding-left:10px;
 }
+
+body header {
+    background-color: #1a1a1a;
+    color:#0cf;
+}
+
+    body header .subHeader {
+        display: block;
+        padding-left: 20px;
+    }
+
+        body header .subHeader, body header .subHeader a {
+            width: 100%;
+            background-color: #323439;
+            color: white;
+        }
 
 .mainHeader {
     font-size: 28pt;
     font-weight: 300;
     padding-top: 5px;
+    padding-left:5px;
 }
+
+    .mainHeader a {
+        color: inherit;
+        text-decoration: inherit;
+        font-size: inherit;
+    }
 
 .subHeader {
     padding-left: 20px;
@@ -31,7 +56,7 @@ img {
     display: inline;
     float: left;
     min-width: 250px;
-    text-align:center;
+    text-align: center;
 }
 
 
@@ -42,24 +67,47 @@ img {
     background-color: transparent;
 }
 
-#bookContents {
+    #rightSection ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    #rightSection .reviewList h3, #rightSection .reviewList h3 a {
+        margin-bottom:0;
+    }
+
+
+.bookContents {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-    #bookContents h2 {
-        font-size: 14px;
-        font-family: "wf_SegoeUI","Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
-    }
 
-#mainContent ol {
-    padding-bottom: 10px;
+h2 {
+    font-family: "wf_SegoeUILight","wf_SegoeUI","Segoe UI Light","Segoe WP Light","Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+    font-size: 1.5em;
+    font-weight: 500;
 }
+
+h3 {
+    font-family: "wf_SegoeUILight","wf_SegoeUI","Segoe UI Light","Segoe WP Light","Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+#mainContent {
+    padding-top: 10px;
+}
+
+    #mainContent ol {
+        padding-bottom: 10px;
+    }
 
 #rightSection h2 {
     margin: 0;
-    padding: 0;
+    /*padding-top: 5px;*/
+    /*padding: 0;*/
 }
 
 footer {
@@ -71,11 +119,55 @@ footer {
     font-size: 10pt;
     color: #818181;
     font-style: italic;
+    background-color: #323439;
 }
+
     footer p {
-        padding:0;
-        margin:0;
+        padding: 0;
+        margin: 0;
     }
+    footer a {
+        color: white;
+    }
+
+
+/*#subheader, #subHeader nav, #subHeader nav ul {
+    display:inline;
+    list-style:none;
+}*/
+
+.subHeader, .subHeader nav, .subHeader nav ul, .subHeader nav ul li {
+    display: inline;
+    padding: 0;
+    padding-left: 2px;
+    margin: 0;
+}
+
+.subHeader {
+    font-style: normal;
+}
+
+    .subHeader nav ul {
+        list-style: none;
+        display: inline;
+    }
+
+.compact, .compact h2, .compact h3, #mainContent ol {
+    margin: 0;
+    padding-bottom: 1px;
+}
+
+.indented {
+    padding-left: 20px;
+}
+
+#reviews {
+    padding-top: 20px;
+}
+
+q em {
+    font-weight: 600;
+}
 
 /* required for windows 8 */
 @media screen and (max-width: 320px) {
@@ -97,10 +189,20 @@ footer {
 
     #leftSection {
         float: none;
-        text-align:left;
+        text-align: left;
     }
 
     #rightSection {
         float: none;
     }
+
+    /* Convert the horizontal menu to a vertical one */
+    .subHeader, .subHeader nav, .subHeader nav ul, .subHeader nav ul li {
+        display: block;
+    }
+
+        .subHeader nav ul li {
+            display: normal;
+            padding-left: 5px;
+        }
 }
