@@ -11,9 +11,10 @@ img {
 }
 
 #mainContent {
-    width: 100%;
+    width: 90%;
     float: none;
-    padding-left:10px;
+    margin-right:10px;
+    margin-left:10px;
 }
 
 body header {
@@ -23,11 +24,10 @@ body header {
 
     body header .subHeader {
         display: block;
-        padding-left: 20px;
+        padding-left:20px;
     }
 
         body header .subHeader, body header .subHeader a {
-            width: 100%;
             background-color: #323439;
             color: white;
         }
@@ -35,8 +35,6 @@ body header {
 .mainHeader {
     font-size: 28pt;
     font-weight: 300;
-    padding-top: 5px;
-    padding-left:5px;
 }
 
     .mainHeader a {
@@ -46,8 +44,6 @@ body header {
     }
 
 .subHeader {
-    padding-left: 20px;
-    padding-bottom: 5px;
     font-style: italic;
 }
 
@@ -97,24 +93,17 @@ h3 {
 }
 
 #mainContent {
-    padding-top: 10px;
+    margin-top: 10px;
 }
-
-    #mainContent ol {
-        padding-bottom: 10px;
-    }
 
 #rightSection h2 {
     margin: 0;
-    /*padding-top: 5px;*/
-    /*padding: 0;*/
 }
 
 footer {
     clear: both;
     width: 100%;
     text-align: center;
-    padding-top: 20px;
     font-family: monospace;
     font-size: 10pt;
     color: #818181;
@@ -130,16 +119,10 @@ footer {
         color: white;
     }
 
-
-/*#subheader, #subHeader nav, #subHeader nav ul {
-    display:inline;
-    list-style:none;
-}*/
-
 .subHeader, .subHeader nav, .subHeader nav ul, .subHeader nav ul li {
     display: inline;
     padding: 0;
-    padding-left: 2px;
+
     margin: 0;
 }
 
@@ -154,21 +137,22 @@ footer {
 
 .compact, .compact h2, .compact h3, #mainContent ol {
     margin: 0;
-    padding-bottom: 1px;
 }
 
 .indented {
-    padding-left: 20px;
+    margin-left: 20px;
 }
 
 #reviews {
-    padding-top: 20px;
+    margin-top: 20px;
 }
 
 q em {
     font-weight: 600;
 }
-
+img {
+        max-width:90%;
+    }
 /* required for windows 8 */
 @media screen and (max-width: 320px) {
     @-ms-viewport {
@@ -178,13 +162,14 @@ q em {
 
 /* mobile */
 @media only screen and (max-width:600px) {
+    
     .mainHeader {
         font-size: 14pt;
         font-weight: 600;
     }
 
     .subHeader {
-        padding-left: 10px;
+        margin-left: 10px;
     }
 
     #leftSection {
