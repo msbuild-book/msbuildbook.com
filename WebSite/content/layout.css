@@ -16,9 +16,6 @@ ul {
 ol {
     padding-top:0;
 }
-.super {
-    vertical-align:super;
-}
 #pageHeader {
     height: 125px;
     background: #1a1a1a;
@@ -174,21 +171,14 @@ footer {
         color: white;
     }
 
-
-
-
-
-
-
-
 /* required for windows 8 */
 @media screen and (max-width: 320px) {
     @-ms-viewport {
         width: 320px;
     }
 }
-/* we have to be a bit careful to setup the sections for different screen sizes*/
 
+/* we have to be a bit careful to setup the sections for different screen sizes*/
 @media only screen and (max-width:1000px) {
     .pageCenter {
         width:600px;
@@ -220,6 +210,9 @@ footer {
             margin-bottom:0;
         }
 
+    #thirdEdition .textXxl {
+        text-align:right;
+    }
     #toc h2, #thirdEdition h2 {
         font-size:15px;
     }
@@ -250,7 +243,7 @@ footer {
         padding-right:5px;
     }
     .bookLogo {
-        background:url(/images/msbuildbook-med.jpg) no-repeat center center;        
+        background:url(/images/msbuildbook-med.jpg) no-repeat center center;
     }
 
     #headerContent {
@@ -268,6 +261,7 @@ footer {
     .rightPart, .teRight {
         clear:both;
         float:left;
+        width:100%;
     }
 
     .textXxlPadding {
@@ -279,8 +273,8 @@ footer {
         }
     .bookLogo {
         background:url(/images/msbuildbook-med.jpg) no-repeat center center;
-        height:153px;
-        width:125px;
+        width:100%;
+        max-height:153px;
     }
     .filler {
         height:0;
@@ -302,7 +296,7 @@ footer {
     }
 
     #toc {
-        height:750px;
+        height:870px;
     }
 
     .mainContent article section {
@@ -313,7 +307,7 @@ footer {
         float:none;
         height:auto;
         width:auto;
-        min-width:350px;
+        min-width:30px;
     }
     .tocRight {
         float:none;
@@ -322,7 +316,7 @@ footer {
         min-width:310px;
     }
 
-    #toc ul,#toc li,#toc ol{
+    #toc ul,#toc li,#toc ol, #toc li{
         padding-top:0;
         padding-bottom:0;
         margin-top:0;
