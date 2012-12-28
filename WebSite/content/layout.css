@@ -1,0 +1,144 @@
+﻿html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: "Segoe UI", Tahoma, Helvetica, Sans-Serif;
+}
+img {
+    border-style: none;
+}
+ul {
+    list-style:none;
+}
+ol {
+    padding-top:0;
+}
+.super {
+    vertical-align:super;
+}
+#pageHeader {
+    height: 125px;
+    background: #1a1a1a;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    opacity: 0.9;
+}
+
+#headerContent {
+    font-size:40px;
+    font-weight:200;
+    height:50px;
+    
+}
+
+header,header a {
+    color:#BAD80A;
+    text-decoration:none;
+}
+
+#pageContent {
+    height: 2000px;
+    margin: 125px auto;
+}
+.pageCenter {
+    width:960px;
+    margin:0px auto;
+}
+/*body section {
+    background-color:aliceblue;
+}*/
+
+    .mainContent article {
+        margin: 0px auto;
+    }
+
+        .mainContent article section {
+            display: inline;
+            margin: 0px auto;
+        }
+
+.textXxlPadding {
+    padding-top:50px;
+}
+    .textXxl {
+        font-size: 66px;
+        line-height:66px;
+        font-weight:400;
+        color:#454545;
+        text-align:left;
+    }
+
+.bookLogo {
+    background:url(/images/msbuildbook.jpg) no-repeat center center;
+    height: 305px;
+    width: 250px;
+}
+
+.leftPart{
+    float:left;
+    width:50%;
+    height:100%;
+    height:400px;
+    text-align:center;
+}
+
+.rightPart {
+    width:50%;
+    float:right;
+    text-align:right;
+    height:400px;
+}
+
+.band400 {
+    height:400px;
+    width:100%;    
+}
+
+.band500 {
+    height:500px;
+    width:100%;    
+}
+
+#pageContent article:nth-child(odd) {
+    background-color:rgb(237, 237, 240);
+}
+#pageContent article:nth-child(even) {
+    background-color:transparent;
+}
+
+.filler {
+    height:100%;
+    width:100%;
+    background:inherit;
+}
+
+#reviewSummary {
+    text-align:left;
+}
+    #reviewSummary h1 {
+        text-align:right;
+    }
+
+#toc h1 {
+    margin-bottom:0;
+}
+#toc h2{
+    margin-bottom:0;
+}
+
+/*#toc li {
+    margin-bottom:0;
+}*/
+
+.tocLeft{
+    float:left;
+    width:50%;
+    height:100%;
+    text-align:left;
+}
+
+.tocRight {
+    width:50%;
+    float:right;
+}
