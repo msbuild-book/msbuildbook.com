@@ -27,7 +27,7 @@
     </header>
     
     <section id="pageContent" class="mainContent">
-        <article class="band400">
+        <article id="book" class="band400">
             <div class="pageCenter">
             <section class="leftPart"><h1 class="textXxl textXxlPadding">The best book on MSBuild and Team Build</h1></section>
             <section class="rightPart bookLogo">
@@ -48,8 +48,7 @@
         <article id="toc" class="band500">
             <div class="pageCenter">
             <h1 class="textXxl">2<span class="super">nd</span> edition TOC</h1>
-                <section class="tocLeft">
-                    <ul id="bookContentsLeft">
+                <section class="tocLeft"><ul id="bookContentsLeft">
                         <li>
                             <h2>Part 1 - Overview</h2>
                             <ol>
@@ -159,34 +158,29 @@
             </div>
         </article>
 
-        <article class="band400"></article>
-
-   <!--     <article>
-            <section class="leftPart"></section>
-            <section class="rightPart"></section>
-        </article>
-
-        <article>
-            <section class="leftPart"></section>
-            <section class="rightPart"></section>
-        </article>
-
-        <article>
-            <section class="leftPart"></section>
-            <section class="rightPart"></section>
-        </article>
-
-        <article>
-            <section class="leftPart"></section>
-            <section class="rightPart"></section>
-        </article>-->
-
-
     </section>
     
     <footer>
-
+        <section>
+            <a href="http://www.amazon.com/gp/product/0735645248/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0735645248&linkCode=as2&tag=msbuildbook-20">
+            <div>buy the book</div>
+            </a>
+            <p>Sayed Ibrahim Hashimi - <a href="https://twitter.com/sayedihashimi">@SayedIHashimi</a></p>
+            <p>William Bartholomew - <a href="https://twitter.com/wbarthol">@wbarthol</a></p>            
+        </section>
+        <p id="legal"> --- (c) 2012 Sedo Technologies. All Rights Reserved. --- </p>
     </footer>
-    
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-1450990-13']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
 </body>
 </html>

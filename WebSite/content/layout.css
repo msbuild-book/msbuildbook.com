@@ -4,9 +4,12 @@
     width: 100%;
     font-family: "Segoe UI", Tahoma, Helvetica, Sans-Serif;
 }
+
 img {
     border-style: none;
+    max-width:100%;
 }
+
 ul {
     list-style:none;
 }
@@ -24,12 +27,14 @@ ol {
     top: 0;
     opacity: 0.9;
 }
+#pageContent {
+    margin: 125px auto;
+}
 
 #headerContent {
     font-size:40px;
     font-weight:200;
-    height:50px;
-    
+    line-height:45px;
 }
 
 header,header a {
@@ -37,17 +42,10 @@ header,header a {
     text-decoration:none;
 }
 
-#pageContent {
-    height: 2000px;
-    margin: 125px auto;
-}
 .pageCenter {
     width:960px;
     margin:0px auto;
 }
-/*body section {
-    background-color:aliceblue;
-}*/
 
     .mainContent article {
         margin: 0px auto;
@@ -78,7 +76,6 @@ header,header a {
 .leftPart{
     float:left;
     width:50%;
-    height:100%;
     height:400px;
     text-align:center;
 }
@@ -120,14 +117,16 @@ header,header a {
         text-align:right;
     }
 
+#toc h2 {
+    font-size:19px;
+    font-weight:600;
+    line-height:25px;
+}
+
 #toc h1 {
     margin-bottom:10px;
 }
 #toc h2{
-    margin-bottom:0;
-    margin-top:0;
-}
-#toc li {
     margin-bottom:0;
 }
 
@@ -152,4 +151,189 @@ header,header a {
 .teRight {
     width:50%;
     float:right;
+}
+
+
+
+footer {
+    clear: both;
+    width: 100%;
+    text-align: center;
+    font-family: monospace;
+    font-size: 10pt;
+    color: #818181;
+    font-style: italic;
+    background-color: #323439;
+}
+
+    footer p {
+        padding: 0;
+        margin: 0;
+    }
+    footer a {
+        color: white;
+    }
+
+
+
+
+
+
+
+
+/* required for windows 8 */
+@media screen and (max-width: 320px) {
+    @-ms-viewport {
+        width: 320px;
+    }
+}
+/* we have to be a bit careful to setup the sections for different screen sizes*/
+
+@media only screen and (max-width:1000px) {
+    .pageCenter {
+        width:600px;
+    }
+
+    #headerContent {
+        font-size:30px;
+        font-weight:200;
+        line-height:35px;
+    }
+    
+    #pageHeader {
+        height: 100px;
+    }
+    #pageContent {
+        margin: 100px auto;
+    }
+
+    .textXxlPadding {
+        padding-top:90px;
+    }
+        .textXxl {
+            font-size: 35px;
+            line-height:40px;           
+        }
+
+        #toc h1,
+        #toc li {
+            margin-bottom:0;
+        }
+
+    #toc h2, #thirdEdition h2 {
+        font-size:15px;
+    }
+}
+
+@media only screen and (max-width:700px) {
+   #headerContent {
+        font-size:20px;
+        line-height:25px;
+        font-weight:600;
+    }
+    #pageHeader {
+        height: 75px;
+    }
+    #pageContent {
+        margin: 75px auto;
+    }
+
+    .pageCenter {
+        width:100%;        
+    }
+        .pageCenter h1 {
+            padding-left:5px;
+            padding-right:5px;
+        }
+    #thirdEdition .pageCenter p {
+        padding-left:5px;
+        padding-right:5px;
+    }
+    .bookLogo {
+        background:url(/images/msbuildbook-med.jpg) no-repeat center center;        
+    }
+
+    #headerContent {
+        padding-left:5px;
+    }
+}
+/* mobile - all vertical layout */
+@media only screen and (max-width:600px) {
+    .leftPart, .teLeft{
+        float:none;
+        width:100%;
+        height:100%;
+    }
+
+    .rightPart, .teRight {
+        clear:both;
+        float:left;
+    }
+
+    .textXxlPadding {
+        padding-top:0;
+    }
+    .textXxl {
+            font-size: 20px;
+            line-height:25px;           
+        }
+    .bookLogo {
+        background:url(/images/msbuildbook-med.jpg) no-repeat center center;
+        height:153px;
+        width:125px;
+    }
+    .filler {
+        height:0;
+        width:0;
+    }
+
+    /* align headers to the left*/
+    #reviewSummary h1  {
+        text-align:left;
+    }
+
+    /* resize bands by ID */
+    #book {
+        height:300px;
+    }
+
+    #reviewSummary {
+        height:250px;
+    }
+
+    #toc {
+        height:750px;
+    }
+
+    .mainContent article section {
+        display:block;
+    }
+
+    .tocLeft {
+        float:none;
+        height:auto;
+        width:auto;
+        min-width:350px;
+    }
+    .tocRight {
+        float:none;
+        height:auto;
+        width:auto;
+        min-width:310px;
+    }
+
+    #toc ul,#toc li,#toc ol{
+        padding-top:0;
+        padding-bottom:0;
+        margin-top:0;
+        margin-bottom:0;
+    }
+    #tocLeft,#tocRight {
+        padding:0;
+        margin:0;
+    }
+
+    #headerContent {
+        min-width:260px;
+    }
 }
