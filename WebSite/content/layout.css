@@ -121,15 +121,15 @@ header,header a {
     }
 
 #toc h1 {
-    margin-bottom:0;
+    margin-bottom:10px;
 }
 #toc h2{
     margin-bottom:0;
+    margin-top:0;
 }
-
-/*#toc li {
+#toc li {
     margin-bottom:0;
-}*/
+}
 
 .tocLeft{
     float:left;
@@ -139,6 +139,17 @@ header,header a {
 }
 
 .tocRight {
+    width:50%;
+    float:right;
+}
+
+.teLeft {
+    float:left;
+    width:50%;
+    height:100%;
+    text-align:left;
+}
+.teRight {
     width:50%;
     float:right;
 }
