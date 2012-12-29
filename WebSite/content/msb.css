@@ -170,7 +170,9 @@ footer {
     footer a {
         color: white;
     }
-
+    #thirdEdition .textXxl {
+        text-align:right;
+    }
 /* required for windows 8 */
 @media screen and (max-width: 320px) {
     @-ms-viewport {
@@ -210,9 +212,7 @@ footer {
             margin-bottom:0;
         }
 
-    #thirdEdition .textXxl {
-        text-align:right;
-    }
+    
     #toc h2, #thirdEdition h2 {
         font-size:15px;
     }
