@@ -173,6 +173,12 @@ footer {
     #thirdEdition .textXxl {
         text-align:right;
     }
+
+#samples em {
+    font-style:inherit;
+}
+
+
 /* required for windows 8 */
 @media screen and (max-width: 320px) {
     @-ms-viewport {
