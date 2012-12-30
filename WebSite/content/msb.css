@@ -10,7 +10,7 @@ img {
     max-width:100%;
 }
 
-ul {
+ul, .noList {
     list-style:none;
 }
 ol {
