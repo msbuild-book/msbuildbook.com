@@ -7,7 +7,7 @@ $(function () {
     // googleplus
     (function () {var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;po.src = 'https://apis.google.com/js/plusone.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);})();
 });
-
+// google analytics
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-1450990-13']);
 _gaq.push(['_trackPageview']);
