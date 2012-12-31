@@ -16,6 +16,10 @@ ul, .noList {
 ol {
     padding-top:0;
 }
+.hidden {
+    display:none;
+    visibility:hidden;
+}
 #pageHeader {
     height: 125px;
     background: #1a1a1a;

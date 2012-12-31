@@ -3,7 +3,7 @@
 <head>
     <title>The best MSBuild and Team Build book</title>
     <meta name="description" content="Site for the book Inside the Microsft Build Engine: Using MSBuild and Team Foundation Build" />
-    <link href="/content/v4/msb.min.css" rel="stylesheet" />
+    <link href="/content/v5/msb.min.css" rel="stylesheet" />
     <!--<link rel="shortcut icon" href="favicon.ico" />-->
 
     <!--<link rel="shortcut icon" href="/favicon1.ico" />-->
@@ -15,16 +15,16 @@
     <meta property="og:title" content="Inside the Microsoft Build Engine: Using MSBuild and Team Foundation Build" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://msbuildbook.com/" />
-    <meta property="og:image" content="http://msbuildbook.com/images/v4/msbuildbook-med.jpg" />
+    <meta property="og:image" content="http://msbuildbook.com/images/v5/msbuildbook-med.jpg" />
     <meta property="og:site_name" content="msbuildbook.com" />
     <meta property="fb:admins" content="2027016" />
     
 </head>
-<body itemscope itemtype="http://schema.org/Product">
+<body>
     <header id="pageHeader">
         
         <section id="headerContent" class="pageCenter">
-            <a href="/">Inside the Microsoft Build Engine: Using MSBuild and Team Foundation Build</a>
+            <span itemprop="name"><a href="/">Inside the Microsoft Build Engine: Using MSBuild and Team Foundation Build</a></span>
             <a href="https://github.com/msbuild-book/msbuildbook.com"><span class="ghFork"></span></a>
         </section>
         
@@ -34,24 +34,33 @@
             <g:plusone size="small"></g:plusone>
         </aside>
     </header>
-    <section id="pageContent" class="mainContent">
+    <section id="pageContent" class="mainContent" itemscope itemtype="http://schema.org/Product">
         <article id="book" class="band400">
             <div class="pageCenter">
-            <section class="leftPart"><h1 class="textXxl textXxlPadding">The <em>best book</em> on msbuild and team build</h1></section>
+            <section class="leftPart">
+                <h1 class="textXxl textXxlPadding">The <em>best book</em> on msbuild and team build</h1></section>
+                <span class="hidden">
+                    <span itemprop="description">Site for the book Inside the Microsft Build Engine: Using MSBuild and Team Foundation Build</span>
+                    <span itemprop="productID">978-0735645240</span>
+                    <span itemprop="releaseDate">2011-01-11</span>
+                </span>
             <section class="rightPart bookLogo">
-                <a href="http://www.amazon.com/gp/product/0735645248/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0735645248&linkCode=as2&tag=msbuildbook-20">
+                <a itemprop="url" href="http://www.amazon.com/gp/product/0735645248/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0735645248&linkCode=as2&tag=msbuildbook-20">
                     <div class="filler"></div></a>
             </section>
             </div>
         </article>
 
-        <article id="reviewSummary" class="band400">
+        <article id="reviewSummary" class="band400" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
             <div class="pageCenter">
-            <h2 class="textXxl">Customer Reviews</h2>
+            <h2 class="textXxl" >Customer Reviews</h2>
                 <a href="http://www.amazon.com/gp/product/0735645248/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0735645248&linkCode=as2&tag=msbuildbook-20">
                 <p><span class="reviewSummaryImage"></span></p></a>
-                <span itemprop="reviewCount">17</span> <span itemprop="ratingValue">five</span> star ratings and 4
-                four star ratings. Overall rating <strong itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">4.8</strong></div>
+                <span class="hidden">21 total reviews</span>
+                <span>17</span> <span itemprop="bestRating">five</span> star ratings and 4
+                <span itemprop="worstRating">four</span> star ratings. Overall rating <strong>4.8</strong></div>
+                <meta itemprop="ratingValue" content="4.8" />
+                <meta itemprop="reviewCount" content="21" />
         </article>
 
         <article id="toc" class="band500 twoColumn">
@@ -61,7 +70,7 @@
                         <li>
                             <h3>Part 1 - Overview</h3>
                             <ol>
-                                <li>MSBuild Quick Start</li>
+                                <li><span itemprop="isRelatedTo">MSBuild</span> Quick Start</li>
                                 <li>NSBuild Deep Dive, Part 1</li>
                                 <li>MSBuild Deep Dive, Part 2</li>
                             </ol>
@@ -135,7 +144,7 @@
                 <section class="leftCol">
                     <ul>
                         <li>
-                            <h3>Chapter 1: What's new in MSBuild</h3>
+                            <h3>Chapter 1: What's new in <span itemprop="isRelatedTo">MSBuild</span></h3>
                             <ol>
                                 <li>Project Compatibility between 2010 and 2012</li>
                                 <li>VisualStudioVersion</li>
@@ -150,14 +159,14 @@
                 <section class="rightCol">
                     <ul class="noList">
                         <li>
-                            <h3>Chapter 2: What's new in Team Build 2012</h3>
+                            <h3>Chapter 2: What's new in <span itemprop="isRelatedTo">Team Build</span> 2012</h3>
                             <ol class="noList">
                                 <li><p>More details soon ...</p></li>
                             </ol>
                         </li>
 
                         <li>
-                            <h3>Chapter 3: What's new in Web Publishing</h3>
+                            <h3>Chapter 3: What's new in <span itemprop="isRelatedTo">Web Publishing</span> (<span itemprop="isRelatedTo">Web Deploy</span>)</h3>
                             <ol class="noList">
                                 <li><p>More details soon ...</p></li>
                             </ol>
@@ -205,17 +214,18 @@
             <a href="http://www.amazon.com/gp/product/0735645248/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0735645248&linkCode=as2&tag=msbuildbook-20">
             <div>buy the book</div>
             </a>
-            <p><span itemprop="author">Sayed Ibrahim Hashimi</span> - <a href="https://twitter.com/sayedihashimi">@SayedIHashimi</a></p>
-            <p><span itemprop="author">William Bartholomew</span> - <a href="https://twitter.com/wbarthol">@wbarthol</a></p>            
+            <p><span>Sayed Ibrahim Hashimi</span> - <a href="https://twitter.com/sayedihashimi">@SayedIHashimi</a></p>
+            <p><span>William Bartholomew</span> - <a href="https://twitter.com/wbarthol">@wbarthol</a></p>
+            <p><span><a href="http://supervisorjoost.com">supervisorjoost</a></span></p>
         </section>
-        <p id="legal"> --- (c) 2012 Sedo Technologies. All Rights Reserved. --- </p>
+        <p id="legal"> --- (c) 2012 <a href="http://sedodream.com/">Sayed Ibrahim Hashimi</a>. All Rights Reserved. --- </p>
     </footer>
 
     <script type="text/javascript">
         // load all of the javascript after the page has fully rendered
         function downloadJSAtOnload() {            
             var element2 = document.createElement("script");
-            element2.src = "/Scripts/v4/allScripts.min.js";
+            element2.src = "/Scripts/v5/allScripts.min.js";
             document.body.appendChild(element2);
         }
 
