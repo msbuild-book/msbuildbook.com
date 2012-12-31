@@ -2,25 +2,32 @@
 <html>
 <head>
     <title>The best MSBuild and Team Build book</title>
-    <meta charset="UTF-8" />
     <meta name="description" content="Site for the book Inside the Microsft Build Engine: Using MSBuild and Team Foundation Build" />
-    <link href="/content/v1/msb.min.css" rel="stylesheet" />
-    <link rel="shortcut icon" href="/favicon.ico" />
+    <link href="/content/v4/msb.min.css" rel="stylesheet" />
+    <!--<link rel="shortcut icon" href="favicon.ico" />-->
+
+    <!--<link rel="shortcut icon" href="/favicon1.ico" />-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
     <meta name="viewport" content="width=device-width"/>
     <!-- facebook info -->
     <meta property="og:title" content="Inside the Microsoft Build Engine: Using MSBuild and Team Foundation Build" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://msbuildbook.com/" />
-    <meta property="og:image" content="http://msbuildbook.com/images/v1/msbuildbook-med.jpg" />
+    <meta property="og:image" content="http://msbuildbook.com/images/v4/msbuildbook-med.jpg" />
     <meta property="og:site_name" content="msbuildbook.com" />
     <meta property="fb:admins" content="2027016" />
     
 </head>
 <body itemscope itemtype="http://schema.org/Product">
-    <header id="pageHeader">        
+    <header id="pageHeader">
+        
         <section id="headerContent" class="pageCenter">
             <a href="/">Inside the Microsoft Build Engine: Using MSBuild and Team Foundation Build</a>
+            <a href="https://github.com/msbuild-book/msbuildbook.com"><span class="ghFork"></span></a>
         </section>
+        
         <aside class="pageCenter">
             <span class="fb-like" data-href="http://msbuildbook.com/" data-colorscheme="dark" data-send="false" data-layout="button_count" data-show-faces="true"></span>
             <a href="https://twitter.com/share" class="twitter-share-button" data-url="msbuildbook.com" data-text="Checkout msbuildbook.com for info on MSBuild, Team Build and Web Deploy"></a>
@@ -208,7 +215,7 @@
         // load all of the javascript after the page has fully rendered
         function downloadJSAtOnload() {            
             var element2 = document.createElement("script");
-            element2.src = "/Scripts/v1/allScripts.js";
+            element2.src = "/Scripts/v4/allScripts.min.js";
             document.body.appendChild(element2);
         }
 
