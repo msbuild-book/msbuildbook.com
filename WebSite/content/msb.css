@@ -198,7 +198,7 @@ footer {
     background-image:url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAAM1BMVEUAAAAzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzPKmszLAAAAEHRSTlMAECAwQFBgcICPn6+/z9/vIxqCigAAAOJJREFUeF59ksGKxDAMQ5Um03Vd13n//7W7dMY0e5kHOQRhIyyp6BYJGbbpPyMoiKGHdgDTbQzzCRxNpVyQe/32hKs9irdlh1PaATVSg3DcDsClc34Gm81LDkNSkE0C8gKuBNSSkPp7XfIw75VdxtQ9+xCSJqbAJW2sbJITSkySs+KSkSovKyEN+CYl/jK7WLnMTlJBdGmwMm4bZd542D/mO+zbsWnEGtcO2/tQnq2W9juMJOq8mXZMAE5JchgVSp8UFcoSZSc5SCrKpQCDF3+PKsBSG3B+OKnafC1bsVVFewm/C/8W2OfjdW4AAAAASUVORK5CYII=);    
 }
 .appxIcon {
-    height:124px;
+    /*height:124px;*/
     width:96px;
     height:400px;
     display:inline-block;
@@ -315,6 +315,16 @@ footer {
 }
 /* mobile - all vertical layout */
 @media only screen and (max-width:600px) {
+    #pageHeader {
+        height: 50px;
+    }
+    #pageContent {
+        margin: 50px auto;
+    }
+    .optional {
+        display:none;
+        visibility:hidden;
+    }
     .mainContent {
         font-size:20px;
     }
@@ -406,9 +416,18 @@ footer {
     #headerContent {
         min-width:260px;
     }
+    .appxIcon {
+        height:200px;
+    }
 }
-@media only screen and (max-width:300px) {
+@media only screen and (max-width:500px) {
     .mainContent {
-        font-size:15px;
+        font-size: 18px;
+    }
+}
+/* iphone */
+@media only screen and (max-width:400px) {
+    .mainContent {
+        font-size:12px;
     }
 }
