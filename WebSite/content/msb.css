@@ -222,6 +222,15 @@ footer {
     top:0;
     right:0;
 }
+.textCenter {
+    text-align:center;
+}
+.youtube1280 {
+    text-align:center;
+    height:720px;
+    width:1280px;
+    max-width:100%;
+}
 
 /* required for windows 8 */
 @media screen and (max-width: 320px) {
