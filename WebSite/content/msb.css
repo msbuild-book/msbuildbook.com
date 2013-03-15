@@ -25,12 +25,15 @@ ol {
 }
 #pageHeader {
     height: 125px;
-    background: #1a1a1a;
+    background-color: #1a1a1a;
     position: fixed;
     width: 100%;
     top: 0;
     opacity: 0.9;
 }
+    #pageHeader a {
+        color:#bad80a;
+    }
 #pageContent {
     margin: 125px auto;
 }
