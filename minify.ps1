@@ -1,4 +1,11 @@
-﻿$ajaxMinPath = 'C:\Program Files (x86)\Microsoft\Microsoft Ajax Minifier\AjaxMin.exe'
+﻿function Get-ScriptDirectory
+{
+	$Invocation = (Get-Variable MyInvocation -Scope 1).Value
+	Split-Path $Invocation.MyCommand.Path
+}
+
+$scriptPath = Get-ScriptDirectory
+$ajaxMinPath = (join-path $scriptPath "tools\ajaxmin\AjaxMin.exe")
 
 if((Test-Path $ajaxMinPath)){
     Set-Alias ajaxmin $ajaxMinPath
