@@ -3,34 +3,46 @@
 <head>
     <title>The best MSBuild and Team Build book</title>
     <meta name="description" content="Site for the book Inside the Microsft Build Engine: Using MSBuild and Team Foundation Build" />
-    <link href="/content/v7/msb.min.css" rel="stylesheet" />
+    <meta name="keywords" content="msbuild,visual studio,build,team build,deployment,web,web deploy" >
+    <link href="/content/v8/msb.min.css" rel="stylesheet" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
     <meta name="viewport" content="width=device-width"/>
         
     <!-- facebook info -->
-    <meta property="og:title" content="Inside the Microsoft Build Engine: Using MSBuild and Team Foundation Build" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://msbuildbook.com/" />
-    <meta property="og:image" content="/images/v7/msbuildbook-144.png" />
-    <meta property="og:site_name" content="msbuildbook.com" />
-    <meta property="fb:admins" content="2027016" /> 
+    <meta name="og:title" content="Inside the Microsoft Build Engine: Using MSBuild and Team Foundation Build" />
+    <meta name="og:type" content="website" />
+    <meta name="og:url" content="http://msbuildbook.com/" />
+    <meta name="og:image" content="/images/v8/msbuildbook-144.png" />
+    <meta name="og:site_name" content="msbuildbook.com" />
+    <meta name="fb:admins" content="2027016" /> 
 
     <!-- win8 -->
     <meta name="application-name" content="The best MSBuild and Team Build book"/>
     <meta name="msapplication-TileColor" content="#000000"/> 
-    <meta name="msapplication-TileImage" content="/images/v7/msbuildbook-wp8.png"/>
+    <meta name="msapplication-TileImage" content="/images/v8/msbuildbook-wp8.png"/>
+
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@SayedIHashimi">
+    <meta name="twitter:title" content="The best MSBuild and Team Build book">
+    <meta name="twitter:description" content="Site for the book Inside the Microsft Build Engine: Using MSBuild and Team Foundation Build">
+    <meta name="twitter:image" content="http://msbuildbook.com/images/v8/msbuildbook-120.png">
+    <meta name="twitter:domain" content="http://msbuildbook.com" />
+
+    <!-- iOs -->
+    <link rel="apple-touch-icon" href="images/msbuildbook-114.png"/>
 </head>
 <body>
     <header id="pageHeader">        
         <section id="headerContent" class="pageCenter">
-            <span><a href="/">Inside the Microsoft Build Engine: Using MSBuild and Team Foundation Build</a></span>
+            <span><a href="/"><h1>Inside the Microsoft Build Engine: Using MSBuild and Team Foundation Build</h1></a></span>
             <a href="https://github.com/msbuild-book/msbuildbook.com"><span class="ghFork"></span></a>
         </section>
     </header>
 
-    <section id="pageContent" class="mainContent" itemscope itemtype="http://schema.org/Book">
+    <section id="pageContent" class="mainContent" itemscope itemtype="http://schema.org/Book" role=”main”>
         <article id="book" class="band400">
             <div class="pageCenter">
             <a itemprop="url" class="bookLogo"
@@ -243,7 +255,7 @@
         // load all of the javascript after the page has fully rendered
         function downloadJSAtOnload() {            
             var element2 = document.createElement("script");
-            element2.src = "/Scripts/v7/allScripts.min.js";
+            element2.src = "/Scripts/v8/allScripts.min.js";
             document.body.appendChild(element2);
         }
 
