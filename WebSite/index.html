@@ -3,50 +3,59 @@
 <head>
     <title>The best MSBuild and Team Build book</title>
     <meta name="description" content="Site for the book Inside the Microsft Build Engine: Using MSBuild and Team Foundation Build" />
+<<<<<<< HEAD
     <link href="/content/v6/msb.css" rel="stylesheet" />
+=======
+    <meta name="keywords" content="msbuild,visual studio,build,team build,deployment,web,web deploy" >
+    <link href="/content/v8/msb.min.css" rel="stylesheet" />
+>>>>>>> 1694748b2123d2ab18d14e68bf885758d6362a2c
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
     <meta name="viewport" content="width=device-width"/>
         
     <!-- facebook info -->
-    <meta property="og:title" content="Inside the Microsoft Build Engine: Using MSBuild and Team Foundation Build" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://msbuildbook.com/" />
-    <meta property="og:image" content="/images/v6/msbuildbook-144.png" />
-    <meta property="og:site_name" content="msbuildbook.com" />
-    <meta property="fb:admins" content="2027016" /> 
+    <meta name="og:title" content="Inside the Microsoft Build Engine: Using MSBuild and Team Foundation Build" />
+    <meta name="og:type" content="website" />
+    <meta name="og:url" content="http://msbuildbook.com/" />
+    <meta name="og:image" content="/images/v8/msbuildbook-144.png" />
+    <meta name="og:site_name" content="msbuildbook.com" />
+    <meta name="fb:admins" content="2027016" /> 
 
     <!-- win8 -->
     <meta name="application-name" content="The best MSBuild and Team Build book"/>
     <meta name="msapplication-TileColor" content="#000000"/> 
-    <meta name="msapplication-TileImage" content="/images/v6/msbuildbook-wp8.png"/>
+    <meta name="msapplication-TileImage" content="/images/v8/msbuildbook-wp8.png"/>
+
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@SayedIHashimi">
+    <meta name="twitter:title" content="The best MSBuild and Team Build book">
+    <meta name="twitter:description" content="Site for the book Inside the Microsft Build Engine: Using MSBuild and Team Foundation Build">
+    <meta name="twitter:image" content="http://msbuildbook.com/images/v8/msbuildbook-120.png">
+    <meta name="twitter:domain" content="http://msbuildbook.com" />
+
+    <!-- iOs -->
+    <link rel="apple-touch-icon" href="images/msbuildbook-114.png"/>
 </head>
 <body>
     <header id="pageHeader">        
         <section id="headerContent" class="pageCenter">
-            <span><a href="/">Inside the Microsoft Build Engine: Using MSBuild and Team Foundation Build</a></span>
+            <span><a href="/"><h1>Inside the Microsoft Build Engine: Using MSBuild and Team Foundation Build</h1></a></span>
             <a href="https://github.com/msbuild-book/msbuildbook.com"><span class="ghFork"></span></a>
         </section>
     </header>
 
-    <section id="pageContent" class="mainContent" itemscope itemtype="http://schema.org/Book">
+    <section id="pageContent" class="mainContent" itemscope itemtype="http://schema.org/Book" role=”main”>
         <article id="book" class="band400">
             <div class="pageCenter">
-            <section class="leftPart">
-                <h1 class="textXxl textXxlPadding">The <em>best book</em> on msbuild and team build</h1></section>
-                <span class="hidden">
-                    <span itemprop="description">Site for the book <span itemprop="name">Inside the Microsft Build Engine: Using MSBuild and Team Foundation Build</span></span>
-                    <span itemprop="isbn">978-0735645240</span>
-                    <span itemprop="datePublished">2011-01-11</span>
-                    <span itemprop="numberOfPages">618</span>
-                    <span itemprop="keywords"></span>
-                    <span itemprop="bookEdition">2<sup>nd</sup> edition</span>
-                </span>
-            <section class="rightPart bookLogo">
-                <a itemprop="url" href="http://www.amazon.com/gp/product/0735645248/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0735645248&linkCode=as2&tag=msbuildbook-20">
-                    <div class="filler"></div></a>
-            </section>
+            <a itemprop="url" class="bookLogo"
+                href="http://www.amazon.com/gp/product/0735645248/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0735645248&linkCode=as2&tag=msbuildbook-20">
+            </a>
+                <span class="plusIcon">&nbsp;</span>
+            <a itemprop="url" class="suppLogo"
+                href="http://www.amazon.com/gp/product/0735678162/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0735678162&linkCode=as2&tag=sedodream-20">
+            </a>
             </div>
         </article>
 
@@ -73,7 +82,7 @@
                             <h3>Part 1 - Overview</h3>
                             <ol>
                                 <li>MSBuild Quick Start</li>
-                                <li>NSBuild Deep Dive, Part 1</li>
+                                <li>MSBuild Deep Dive, Part 1</li>
                                 <li>MSBuild Deep Dive, Part 2</li>
                             </ol>
                         </li>
@@ -132,49 +141,52 @@
             </div>
         </article>
 
-        <article id="thirdEdition" class="band500 twoColumn">
+        <article id="thirdEdition" class="tocband twoColumn">
             <div class="pageCenter">
-                <h2 class="textXxl">3<sup>rd</sup> edition update</h2>
-
-                <p>We are currently working on the third edition of this book.
-                    Since all the content from the second edition is still relevant, we have decided to release a 
-                    smaller text which supplements the existing book. This will enable us to deliver the update 
-                    quicker, and it makes it a lot easier for everyone who has already purchased the second 
-                    edition. Oh yeah, and its going to be cheap so you'll certainly want to pick it up.                    
+                <h2 class="textXxl">2<sup>nd</sup> edition Supplement</h2>
+                <p>Since all the content from the second edition is still relevant, we have decided to release a 
+                    smaller text which supplements the existing book. This makes it a lot easier for everyone who
+                    has already purchased the second 
+                    edition.
                 </p>
-                <p>Below is the current outline, which is of course subject to change.</p>
-                <section class="leftCol">
-                    <ul>
-                        <li>
-                            <h3>Chapter 1: What's new in MSBuild</h3>
-                            <ol>
-                                <li>Project Compatibility between 2010 and 2012</li>
-                                <li>VisualStudioVersion</li>
-                                <li>Out of Process Tasks</li>
-                                <li>NuGet</li>
-                                <li>XML Updates with SlowCheetah</li>
-                                <li>Cookbook</li>
-                            </ol>
-                        </li>
-                    </ul>
-                </section>
-                <section class="rightCol">
-                    <ul class="noList">
-                        <li>
-                            <h3>Chapter 2: What's new in Team Build 2012</h3>
-                            <ol class="noList">
-                                <li><p>More details soon ...</p></li>
-                            </ol>
-                        </li>
 
-                        <li>
-                            <h3>Chapter 3: What's new in Web Publishing</h3>
-                            <ol class="noList">
-                                <li><p>More details soon ...</p></li>
-                            </ol>
-                        </li>
-                    </ul>
-                </section>                
+                <section class="leftCol">
+                <section class="a">                   
+                    <h3>Chapter 1: What's new in MSBuild</h3>
+                    <ol>
+                        <li>Visual Studio project compatibility between 2010 and 2012</li>
+                        <li>Out of Process Tasks</li>
+                        <li>NuGet</li>
+                        <li>XML Updates with SlowCheetah</li>
+                        <li>Cookbook</li>
+                    </ol>
+                </section>
+                <section class="b">
+                    <h3>Chapter 2: What's new in Team Build 2012</h3>
+                    <ol>
+                        <li>Installation</li>
+                        <li>Team Foundation Service</li>
+                        <li>User interface (UI) enhancements</li>
+                        <li>Visual Studio Test Runner</li>
+                        <li>Pausing build definitions</li>
+                        <li>Batching</li>
+                        <li>Logging</li>
+                        <li>Windows Workflow Foundation 4.5</li>
+                        <li>Cookbook</li>
+                    </ol>
+                </section>   
+                    </section>
+                <section class="rightCol">
+                    <h3>Chapter 3: What's new in Web Publishing</h3>
+                    <ol>
+                        <li>Overview of the new Publish Web Dialog</li>
+                        <li>Building web packages</li>
+                        <li>Publish profiles</li>
+                        <li>Database publishing support</li>
+                        <li>Profile-specific web.config transforms</li>
+                        <li>Cookbook</li>
+                    </ol>
+                </section>
             </div>
         </article>
 
@@ -198,14 +210,14 @@
                 </section>
 
                 <section class="rightCol twoColCenter">
-                    <h3>Thrid edition samples</h3>
+                    <h3>2<sup>nd</sup> edition samples</h3>
                     <p>
                         <a href="https://github.com/msbuild-book/samples-v3/archive/master.zip">
                         <span class="zipIcon"></span></a>
                     </p>
                     <a href="https://github.com/msbuild-book/samples-v3">
                         <span class="ghIcon"></span>
-                        v3 samples repo</a>
+                        2nd edition repo</a>
                 </section>
             </div>            
         </article>
@@ -227,14 +239,16 @@
     
     <footer itemscope itemtype="http://schema.org/Person">
         <section>
-            <a href="http://www.amazon.com/gp/product/0735645248/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0735645248&linkCode=as2&tag=msbuildbook-20">
-            <div>buy the book</div>
-            </a>
+            <div>buy the <a href="http://www.amazon.com/gp/product/0735645248/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0735645248&linkCode=as2&tag=msbuildbook-20">
+                         2<sup>nd</sup> edition</a>
+                    or the<a href="http://www.amazon.com/gp/product/0735678162/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0735678162&linkCode=as2&tag=sedodream-20">
+                        Supplement
+                        </a>
+            </div>
+            
             <p><span></span></p>
         </section>
         <p id="legal"> --- (c) 2012 <a href="http://sedodream.com/">Sayed Ibrahim Hashimi</a>. All Rights Reserved. <a href="http://supervisorjoost.com">supervisorjoost</a>--- </p>
-
-
 
         <a href="https://plus.google.com/112479347603456768942?rel=publisher" class="hidden">g+</a>
         <a href="https://plus.google.com/112479347603456768942?rel=author" class="hidden">g+</a>
@@ -245,7 +259,11 @@
         // load all of the javascript after the page has fully rendered
         function downloadJSAtOnload() {            
             var element2 = document.createElement("script");
+<<<<<<< HEAD
             element2.src = "/Scripts/v6/allScripts.js";
+=======
+            element2.src = "/Scripts/v8/allScripts.min.js";
+>>>>>>> 1694748b2123d2ab18d14e68bf885758d6362a2c
             document.body.appendChild(element2);
         }
 
